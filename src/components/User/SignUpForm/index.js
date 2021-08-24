@@ -52,6 +52,7 @@ export default function SignUpForm() {
             <input
               className="form-control"
               placeholder="Password"
+              type="password"
               {...register("password", { required: true })}
             />
           </div>
