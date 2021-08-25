@@ -11,8 +11,8 @@ export default function OrderItem({ item, userAddress }) {
           ))}
         </div>
       </div>
-      <div className="col-6">
-        <div className="d-flex justify-content-center ">
+      <div className="col-6 d-flex justify-content-center align-items-center">
+        <div className="">
           <h5>
             {userAddress.address}---{userAddress.city},{userAddress.country}---
             {userAddress.postal_code}
