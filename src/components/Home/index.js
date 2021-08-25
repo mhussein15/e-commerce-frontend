@@ -14,7 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Home = () => {
   const categories = useSelector((state) => state.categoryReducer.categories);
   const products = useSelector((state) => state.productReducer.products);
-  const categoriesList = categories.map((category) => (
+  const categoriesList = categories.slice(0, 3).map((category) => (
     <CategoryCardsHome key={category.id} category={category} />
   ));
   const productList = products
